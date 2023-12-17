@@ -19,8 +19,8 @@
 "ms-python.vscode-pylance",
 "ms-python.autopep8",
 "fedricknishant.turbo-python-print",
-"christian-kohler.path-intellisense",
 "james-yu.latex-workshop",
+"christian-kohler.path-intellisense",
 "hediet.vscode-drawio"
 ]
 },
