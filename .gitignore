@@ -1,17 +1,9 @@
-__pycache__
-
-*.aux
-
-*.fdb_latexmk
-
-*.fls
-
-*.log
-
+#! ==================================================
+*.aex
+*.mtc
 main.pdf
-
-*.synctex.gz
-
+tempCodeRunnerFile.*
+#! ==================================================
 # https://github.com/github/gitignore/blob/main/Python.gitignore
 # Byte-compiled / optimized / DLL files
 __pycache__/
