@@ -9,7 +9,8 @@
 ],
  "settings": {
  "code-runner.executorMap": {
- "python": " clear && cd $dir && python $fileName"
+ "python": " clear && cd $dir && python $fileName",
+ "markdown": " clear && cd $dir && if [ $fileName = README.md ]; then ( cd  ../../workspace/others/push && python push.py ); else ( echo NO ); fi;",
  }
  }
 }
