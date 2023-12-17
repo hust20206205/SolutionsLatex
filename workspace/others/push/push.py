@@ -15,6 +15,7 @@ MyGit.commit(message)
 
 MyFormat.workspace(workspace_path)
 MyFormat.markdown(git_path)
+MyFormat.gitignore(git_path)
 MyFormat.latex(git_path)
 
 MyView.CloseTab()
