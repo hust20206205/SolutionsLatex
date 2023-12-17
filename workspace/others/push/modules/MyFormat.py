@@ -24,6 +24,8 @@ class MyFormat:
             if contents == '':
                 continue
 
+            contents = contents.replace('\n', '\n\n\n')
+
             while '  ' in contents:
                 contents = contents.replace('  ', ' ')
             contents = '\n'.join(line.strip() for line in contents.split('\n'))
@@ -36,6 +38,8 @@ class MyFormat:
     def gitignore(gitignore_path):
         with open(gitignore_path, 'r', encoding="utf-8") as file:
             contents = file.read()
+
+        contents = contents.replace('\n', '\n\n\n')
 
         while '  ' in contents:
             contents = contents.replace('  ', ' ')
