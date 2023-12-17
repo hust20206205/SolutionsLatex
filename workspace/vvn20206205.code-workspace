@@ -1,11 +1,11 @@
 {
  "folders": [
-    {
-        "path": ".."
-    },
-    {
-        "path": "../baocao"
-    }
+ {
+ "path": ".."
+ },
+ {
+ "path": "../baocao"
+ }
 ],
  "settings": {
  "code-runner.executorMap": {
