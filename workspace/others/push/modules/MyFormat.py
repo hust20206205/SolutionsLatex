@@ -1,7 +1,10 @@
 import os
 import glob
 
-replacements=123
+replacements = {
+    '\n': '\n\n\n',
+}
+
 
 class MyFormat:
     def workspace(workspace_path):
@@ -27,29 +30,24 @@ class MyFormat:
                 file_markdown.write(contents)
 
     def latex(git_path):
-        print(replacements)
-        exit()
         files = glob.glob(os.path.join(git_path, f'**/*.tex'), recursive=True)
         for file_latex in files:
             with open(file_latex, 'r', encoding="utf-8") as file_latex:
                 contents = file_latex.read()
 
+            for key, value in replacements.items():
+                value = f"  {value}  "
+                contents = contents.replace(key, value)
 
-
-
-
-        
             while ' ,' in contents:
                 contents = contents.replace(' ,', ', ')
             contents = contents.replace(' ,', ', ')
             while ' ?' in contents:
                 contents = contents.replace(' ?', '? ')
-            contents = contents.replace(' ?', '? ') 
+            contents = contents.replace(' ?', '? ')
             while ' !' in contents:
                 contents = contents.replace(' !', '! ')
-            contents = contents.replace(' !', '! ') 
-
-
+            contents = contents.replace(' !', '! ')
 
             while '  ' in contents:
                 contents = contents.replace('  ', ' ')
