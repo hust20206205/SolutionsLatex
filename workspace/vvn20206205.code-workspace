@@ -1,12 +1,12 @@
 {
-  "folders": [
-    {
-      "path": ".."
-    }
-  ],
-  "settings": {
-    "code-runner.executorMap": {
-      "python": " clear && cd $dir && python $fileName"
-    }
-  }
+ "folders": [
+ {
+ "path": ".."
+ }
+ ],
+ "settings": {
+ "code-runner.executorMap": {
+ "python": " clear && cd $dir && python $fileName"
+ }
+ }
 }
