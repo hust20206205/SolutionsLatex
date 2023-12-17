@@ -28,7 +28,7 @@ class MyView:
     def OpenGit():
         pyautogui.hotkey('ctrl', 'shift', 'g')
 
-    def OpenLatex():
-        pyautogui.hotkey('alt', 2)
-        pyautogui.hotkey('ctrl', 'alt', 'b')
-        pyautogui.hotkey('ctrl', 'alt', 'v')
+    # def OpenLatex():
+    #     pyautogui.hotkey('alt', 2)
+    #     pyautogui.hotkey('ctrl', 'alt', 'b')
+    #     pyautogui.hotkey('ctrl', 'alt', 'v')
