@@ -6,8 +6,7 @@ from modules.MyView import MyView
 
 git_path = os.path.join(os.getcwd(), '../../../')
 workspace_path = os.path.join(os.getcwd(), '../../vvn20206205.code-workspace')
-gitignore_path = os.path.join(git_path, ".gitignore")
-
+gitignore_path = os.path.join(git_path, ".gitignore") 
 message = "VuVanNghia20206205"
 
 MyGit.chdir(git_path)
