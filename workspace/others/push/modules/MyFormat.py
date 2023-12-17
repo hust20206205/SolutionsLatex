@@ -1,6 +1,7 @@
 import os
 import glob
 
+replacements=123
 
 class MyFormat:
     def workspace(workspace_path):
@@ -26,7 +27,7 @@ class MyFormat:
                 file_markdown.write(contents)
 
     def latex(git_path):
-        print(123)
+        print(replacements)
         exit()
         files = glob.glob(os.path.join(git_path, f'**/*.tex'), recursive=True)
         for file_latex in files:
