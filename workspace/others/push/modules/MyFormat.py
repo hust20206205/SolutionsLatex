@@ -39,7 +39,7 @@ class MyFormat:
             with open(file_markdown, 'w', encoding="utf-8") as file:
                 file.write(contents)
 
-    def gitignore(gitignore_path):
+    def basic(gitignore_path):
         with open(gitignore_path, 'r', encoding="utf-8") as file:
             contents = file.read()
 
