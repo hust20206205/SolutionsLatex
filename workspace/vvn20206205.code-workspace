@@ -1,16 +1,33 @@
 {
- "folders": [
- {
- "path": ".."
- },
- {
- "path": "../baocao"
- }
+"folders": [
+{
+"path": ".."
+},
+{
+"path": "../baocao"
+}
 ],
- "settings": {
- "code-runner.executorMap": {
- "python": " clear && cd $dir && python $fileName",
- "markdown": " clear && cd $dir && if [ $fileName = README.md ]; then ( cd ../../workspace/others/push && python push.py ); else ( echo NO ); fi;",
- }
- }
+"extensions": {
+"recommendations": [
+"formulahendry.code-runner",
+"dracula-theme.theme-dracula",
+"aaron-bond.better-comments",
+"pkief.material-icon-theme",
+"codeium.codeium",
+"almenon.arepl",
+"ms-python.python",
+"ms-python.vscode-pylance",
+"ms-python.autopep8",
+"fedricknishant.turbo-python-print",
+"christian-kohler.path-intellisense",
+"james-yu.latex-workshop",
+"hediet.vscode-drawio"
+]
+},
+"settings": {
+"code-runner.executorMap": {
+"python": " clear && cd $dir && python $fileName",
+"markdown": " clear && cd $dir && if [ $fileName = README.md ]; then ( cd ../../workspace/others/push && python push.py ); else ( echo NO ); fi;"
+}
+}
 }
