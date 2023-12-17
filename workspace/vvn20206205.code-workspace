@@ -1,9 +1,12 @@
 {
  "folders": [
- {
- "path": ".."
- }
- ],
+    {
+        "path": ".."
+    },
+    {
+        "path": "../baocao"
+    }
+],
  "settings": {
  "code-runner.executorMap": {
  "python": " clear && cd $dir && python $fileName"
