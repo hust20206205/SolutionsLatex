@@ -33,7 +33,7 @@ class MyFormat:
             with open(file_markdown, 'w', encoding="utf-8") as file:
                 file.write(contents)
     def gitignore(git_path):
-        files = glob.glob(os.path.join(git_path, f'**/*.gitignore'), recursive=True)
+        files = glob.glob(os.path.join(git_path, f'**/*gitignore'), recursive=True)
         for file_markdown in files:
             with open(file_markdown, 'r', encoding="utf-8") as file:
                 contents = file.read()
