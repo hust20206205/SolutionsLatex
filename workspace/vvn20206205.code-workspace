@@ -6,7 +6,7 @@
   ],
   "settings": {
     "code-runner.executorMap": {
-      "python": "python"
+      "python": " clear && cd $dir && python $fileName"
     }
   }
 }
