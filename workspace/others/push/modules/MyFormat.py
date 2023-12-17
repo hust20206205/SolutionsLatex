@@ -20,6 +20,10 @@ class MyFormat:
         for file_markdown in files:
             with open(file_markdown, 'r', encoding="utf-8") as file_markdown:
                 contents = file_markdown.read()
+                
+            if contents == '':
+                continue
+            
             while '  ' in contents:
                 contents = contents.replace('  ', ' ')
             contents = '\n'.join(line.strip() for line in contents.split('\n'))
@@ -34,6 +38,9 @@ class MyFormat:
         for file_latex in files:
             with open(file_latex, 'r', encoding="utf-8") as file_latex:
                 contents = file_latex.read()
+
+            if contents == '':
+                continue
 
             for key, value in replacements.items():
                 value = f"  {value}  "
