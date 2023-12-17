@@ -26,10 +26,29 @@ class MyFormat:
                 file_markdown.write(contents)
 
     def latex(git_path):
+        print(123)
+        exit()
         files = glob.glob(os.path.join(git_path, f'**/*.tex'), recursive=True)
         for file_latex in files:
             with open(file_latex, 'r', encoding="utf-8") as file_latex:
                 contents = file_latex.read()
+
+
+
+
+
+        
+            while ' ,' in contents:
+                contents = contents.replace(' ,', ', ')
+            contents = contents.replace(' ,', ', ')
+            while ' ?' in contents:
+                contents = contents.replace(' ?', '? ')
+            contents = contents.replace(' ?', '? ') 
+            while ' !' in contents:
+                contents = contents.replace(' !', '! ')
+            contents = contents.replace(' !', '! ') 
+
+
 
             while '  ' in contents:
                 contents = contents.replace('  ', ' ')
