@@ -14,11 +14,12 @@ MyGit.add()
 MyGit.commit(message)
 
 MyFormat.workspace(workspace_path)
+MyFormat.markdown(git_path)
 
 MyView.CloseTab()
 MyView.Target(3)
 MyView.CloseTerminal()
 MyView.CloseScrollBar()
 MyView.CollapseFolders()
-# MyView.OpenGit()
+MyView.OpenGit()
 # MyView.OpenLatex()
