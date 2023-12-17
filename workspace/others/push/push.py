@@ -4,8 +4,8 @@ from modules.MyFormat import MyFormat
 from modules.MyView import MyView
 
 
-git_path=os.path.join(os.getcwd(),'../../../')
-workspace_path=os.path.join(os.getcwd(),'../../vvn20206205.code-workspace')
+git_path = os.path.join(os.getcwd(), '../../../')
+workspace_path = os.path.join(os.getcwd(), '../../vvn20206205.code-workspace')
 
 message = "VuVanNghia20206205"
 
@@ -15,14 +15,10 @@ MyGit.commit(message)
 
 MyFormat.workspace(workspace_path)
 
-# MyView.CloseTab()
-# MyView.Target(2)
-# MyView.CloseTerminal()
-# MyView.CloseScrollBar()
+MyView.CloseTab()
+MyView.Target(3)
+MyView.CloseTerminal()
+MyView.CloseScrollBar()
 # MyView.CollapseFolders()
-# MyView.OpenGit()
+MyView.OpenGit()
 # MyView.OpenLatex()
-
-
-
-
