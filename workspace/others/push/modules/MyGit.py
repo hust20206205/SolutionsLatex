@@ -3,8 +3,9 @@ from modules.MyExecute import MyExecute
 
 
 class MyGit:
-    def add():
-        os.chdir("../../../")
+    def chdir(path):
+        os.chdir(path) 
+    def add(): 
         cmd = f'git add .'
         MyExecute(cmd)
 
