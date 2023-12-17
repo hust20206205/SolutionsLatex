@@ -15,6 +15,7 @@ MyGit.commit(message)
 
 MyFormat.workspace(workspace_path)
 MyFormat.gitignore(gitignore_path)
+MyFormat.gitignore(r"C:\Users\vvn20206205\Desktop\SolutionsLatex\baocao\start\init.sty")
 MyFormat.markdown(git_path)
 MyFormat.latex(git_path)
 
